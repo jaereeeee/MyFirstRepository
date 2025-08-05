@@ -1,0 +1,15 @@
+ body{
+    background-color:#bde0fc;
+ }
+ th, td{
+    border: 1px solid black;
+    border-radius: 10px;
+ }
+ th, td{
+    border-style: outset;
+ }
+th, td{
+    background-color: #ffafcc;
+    border-color:#cdb4db;
+}
+ 
