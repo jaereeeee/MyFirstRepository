@@ -1,5 +1,5 @@
  body{
-    background-color:#bde0fc;
+    background-color: #cdb4db;
  }
  th, td{
     border: 1px solid black;
@@ -8,6 +8,6 @@
  }
 th, td{
     background-color: #ffafcc;
-    border-color:#cdb4db;
+    border-color:black;
 }
  
