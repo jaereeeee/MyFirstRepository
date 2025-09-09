@@ -1,0 +1,81 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header, footer, nav, main, section, article, aside, figure, form, fieldset, table {
+  border: 1px solid #ffc8dd;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #fff;
+}
+
+h1, h2 , h3 {
+  color: #a2d2ff;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+blockquote {
+  border-left: 4px solid #ffafcc;
+  padding-left: 10px;
+  margin: 10px 0;
+  font-style: italic;
+  background: #ffc8dd;
+}
+
+address {
+  font-style: normal;
+  background: #bcd0db;
+  padding: 10px;
+}
+
+canvas {
+  display: block;
+  margin: 10px 0;
+}
+
+figure {
+  text-align: center;
+}
+
+pre {
+  background: black;
+  color: #f8f8f2;
+  padding: 10px;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid pink;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+video {
+  display: block;
+  margin: 10px 0;
+}
+form table td {
+  padding: 5px;
+}
