@@ -1,0 +1,190 @@
+.head{
+    background-color: #f4daf9;
+    width: 92%;
+    float: left;
+    border: 2px solid black;
+    margin: 2%;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px grey;
+    height: 200px;
+    padding: 15px;
+}
+.heading{
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;
+}
+.para{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: black;
+}
+.content{
+    background-color: #f4daf9;
+    width: 92%;
+    float: left;
+    border: 2px solid black;
+    margin: 2%;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px grey;
+    height: 900px;
+    padding: 15px;
+}
+
+.sub-content {
+    background-color: #feb6c2;
+    float: left;
+    border: 2px solid black;
+    margin: 2%;
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px grey;
+    height: 200px;
+    width: 29%;
+    padding: 10px;
+
+    overflow: hidden;           /* Prevents content from spilling */
+    word-wrap: break-word;      /* Breaks long words */
+    box-sizing: border-box;     /* Includes padding inside width/height */
+
+}
+.sub-content[title="country"] {
+    background-color: #ffcc00; /* Yellow for country */
+}
+.sub-content[title="famous food"] {
+    background-color: #ff99cc; /* Pink for famous food */
+}
+.sub-content[title="national flower"] {
+    background-color: #ccffcc; /* Green for national flower */
+}
+.sub-content[title="national bird"] {
+    background-color: #ccccff; /* Blue for national bird */
+}
+.sub-content[title="national fruit"] {
+    background-color: #ffff99; /* Light yellow for national fruit */
+}
+.sub-content[title="national hero"] {
+    background-color: #ffcc99; /* Light pink for national hero */
+}
+.sub-content[title="national tree"] {
+    background-color: #99ccff; /* Light blue for national tree */
+}
+.sub-content[title="national dress"] {
+    background-color: #ffccff; /* Light purple for national dress */
+}
+.sub-content[title="first president"] {
+    background-color: #ffffcc; /* Light yellow for first president */
+}
+
+#box{
+    background-color: #f4daf9;
+    width: 92%;
+    float: left;
+    border: 2px solid black;
+    margin: 2%;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px grey;
+    height: 400px;
+    padding: 15px;
+}
+#country {
+    background-color: #faedcb; /* Yellow for country */
+}
+#famous-food {
+    background-color: #eebec6; /* Pink for famous food */
+}
+#national-flower {
+    background-color: #c9e4de; /* Green for national flower */
+}
+#national-bird {
+    background-color: #c6def1; /* Blue for national bird */
+}
+#national-fruit {
+    background-color: #dbcdf0; /* Light yellow for national fruit */
+}
+#national-hero {
+    background-color: #f2c6de; /* Light pink for national hero */
+}
+#national-tree {
+    background-color: #f7e5ec; /* Light blue for national tree */
+}
+#national-dress {
+    background-color: #d28a8c; /* Light purple for national dress */
+}
+#first-president {
+    background-color: #ffffcc; /* Light yellow for first president */
+}
+.content,
+#box {
+    background-color: #f4daf9;
+    width: 92%;
+    float: left;
+    border: 2px solid black;
+    margin: 2%;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px grey;
+    padding: 15px;
+    height: auto;
+    transition: all 0.4s ease;
+    animation: fadeInUp 0.8s ease both;
+    position: relative;
+}
+.content:hover,
+#box:hover {
+    background-color: #ffe0f0;
+    border-color: #ff8fab;
+    transform: scale(1.03) rotate(0.5deg);
+    box-shadow: 0 0 25px rgba(255, 182, 193, 0.6), 0 0 40px rgba(255, 192, 203, 0.4);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    animation: pulse 1s infinite alternate;
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1.02);
+        box-shadow: 0 0 20px #ffb6c1;
+    }
+    to {
+        transform: scale(1.04);
+        box-shadow: 0 0 30px #ff85a2;
+    }
+}
+.content:hover::after,
+#box:hover::after {
+    content: "✨";
+    position: absolute;
+    top: -15px;
+    right: 15px;
+    font-size: 20px;
+    animation: sparkle 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes sparkle {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+}
