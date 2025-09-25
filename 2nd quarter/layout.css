@@ -36,6 +36,11 @@ nav li a{
   text-decoration: none;
 }
  
+/* Change the link and background color on hover */
+li a:hover {
+  background-color: #99ccff;
+  color: white;
+}
  
 article {
   float: left;
@@ -61,8 +66,3 @@ footer {
   }
 }
 
-/* Change the link and background color on hover */
-li a:hover {
-  background-color: #99ccff;
-  color: white;
-}
