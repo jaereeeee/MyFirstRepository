@@ -27,6 +27,7 @@ nav ul {
   list-style-type: none;
   padding: 0;
   text-align: center;
+  margin: 0;
 }
 
 nav li a{
@@ -42,6 +43,16 @@ li a:hover {
   color: white;
 }
  
+
+li a.active {
+  background-color: #ff99cc;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #d28a8c;
+  color: blanchedalmond;
+}
 article {
   float: left;
   padding: 20px;
