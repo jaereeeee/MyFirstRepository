@@ -50,7 +50,7 @@ li a.home {
   color: white;
 }
 
-li a:hover:not(.home) {
+li a:hover:not() {
   background-color: #555555;
   color: white;
 }
