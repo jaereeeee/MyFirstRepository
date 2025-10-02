@@ -77,3 +77,19 @@ footer {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  nav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  article {
+    width: 100%;
+    height: auto;
+    position: relative; 
+  }
+  nav ul li a {
+    float: left;
+    padding: 15px;
+  }
+}

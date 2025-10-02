@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Attribute Examples</title>
+  <style>
+    article {
+      font-family: monospace;
+      background-color: #fff0f5;
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    article h1, article h2, article h3, article h4, article h5, article h6 {
+      color: palevioletred;
+      text-align: center;
+      margin: 20px 0 10px;
+    }
+
+    article p {
+      background-color: pink;
+      text-align: center;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+
+    article a {
+      color: white;
+      background-color: #f7a8c4;
+      padding: 8px 12px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
+    article a:hover {
+      background-color: #f48fb1;
+    }
+
+    article img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    article pre {
+      background-color: #ffeef5;
+      padding: 10px;
+      border-radius: 5px;
+      white-space: pre-wrap;
+      font-family: monospace;
+    }
+
+    article hr {
+      margin: 30px 0;
+      border: none;
+      border-top: 2px dashed palevioletred;
+    }
+
+    article blockquote {
+      background-color: #fce4ec;
+      padding: 15px;
+      margin: 20px auto;
+      border-left: 4px solid palevioletred;
+      width: 80%;
+    }
+
+    article q, article code, article samp, article kbd, article var, article cite, article dfn, article abbr, article time, article address, article bdo, article bdi, article s {
+      display: block;
+      margin: 10px auto;
+      background-color: #fce4ec;
+      padding: 5px;
+      border-radius: 5px;
+      font-style: italic;
+    }
+
+    article span {
+      display: inline-block;
+      margin: 5px;
+      padding: 5px 10px;
+      background-color: #ffc8dd;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <article>
+    <h3>Attributes</h3>
+    <h4>Links</h4>
+    <p>href is hypertext reference that puts a location or address</p>
+    <p><a href="Hannie.html.html">To my resume</a></p>
+    <p><a href="hanhan.html">To my HTML basics</a></p>
+
+    <h4>src</h4>
+    <p>src is the source that tells where an image is located.</p>
+    <img src="miniteen.jpg.jpg" alt="Image Example" height="200" width="350">
+    <p>The image has a height and width attribute</p>
+
+    <h4>Absolute URL</h4>
+    <img src="jjongtoram.jpg.jpg" alt="Outside hosted image" height="200" width="200">
+    <p>This image is from an outside host</p>
+
+    <h4>Relative URL</h4>
+    <img src="miniteen.jpg.jpg" alt="Local image" height="200" width="200">
+    <p>This image is stored locally on this website</p>
+
+    <p>This is a palevioletred paragraph</p>
+    <p title="I'm a tooltip">This paragraph has a tooltip</p>
+    <p title='This title has a "Double Code" inside the single code'>This paragraph has a double quote</p>
+
+    <h1>This is a heading 1</h1>
+    <hr>
+    <h6 style="font-size: 64px;">This is a heading 6 but with 64px font</h6>
+    <hr>
+
+    <h4>This poem uses a &lt;pre&gt; tag</h4>
+    <pre>
+      I love Yoon Jeonghan
+      I love Yoon Jeonghan
+      I love Yoon Jeonghan
+      I love Yoon Jeonghan
+    </pre>
+
+    <p style="color: palevioletred; background-color: black;">I'm palevioletred</p>
+    <p style="color: crimson; background-color: burlywood;">I'm crimson</p>
+    <p style="background-color: blanchedalmond; font-size: 30px;">I'm big because my font size is 30px</p>
+    <p style="color: blue; background-color: brown; font-size: 300%; font-family: initial;">Jereline</p>
+    <hr>
+
+    <h4>This section has HTML Formatting Elements</h4>
+    <p>This is used to bold a <b>text</b> in HTML</p>
+    <p><i>"To those who have ever needed a friend..."</i></p>
+    <p>My bias is <u>Jeonghan</u> from Seventeen</p>
+    <p>I love <strong>chocolates</strong></p>
+    <p>I love <em>Enhypen</em></p>
+    <p>This is used to <mark>highlight</mark> a text</p>
+    <p>The title is <small>THE FIRST GARDENER</small></p>
+    <p>This is used to <del>cross-out</del> the wrong word</p>
+    <p>I'm excited for the <ins>concert</ins> tonight</p>
+    <p>CO<sub>2</sub> is carbon dioxide</p>
+    <p>x<sup>2</sup> + b + c = 0 is an equation</p>
+    <p>This is an example of code <code>&lt;pre&gt;</code></p>
+
+    <pre>"It's okay. It's not a crime for being not able to do it out of fear."</pre>
+
+    <blockquote>
+      When things are hard and you're tired<br>
+      I'll shine on you, Smile Brightly<br>
+      So we can be strength to each other<br>
+      Let's sing together<br>
+      Even after this night is over<br>
+    </blockquote>
+
+    <q>This is a quotation</q>
+    <samp>This is a sample output</samp>
+    <kbd>This is keyboard input</kbd>
+    <var>This is a variable</var>
+    <cite>This is a citation</cite>
+    <dfn>This is a definition</dfn>
+    <abbr title="breakline">br</abbr>
+    <time datetime="2009-05-12">May 12, 2009</time>
+    <address>Brgy.178 Ph6 Pechayan, Camarin, Caloocan City</address>
+    <bdo dir="rtl">right-to-left</bdo>
+    <bdi>bidirectional isolation</bdi>
+    <s>This is strikethrough text</s>
+    <span>Span with #ffc8dd color</span>
+  </article>
+
+</body>
+</html>

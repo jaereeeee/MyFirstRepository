@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Activity</title>
+  <style>
+    .color-activity {
+      max-width: 800px;
+      margin: auto;
+      padding: 30px;
+      background-color: #fff0f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      border-radius: 10px;
+    }
+
+    .color-activity h1, 
+    .color-activity h3 {
+      text-align: center;
+      color: palevioletred;
+    }
+
+    .color-activity p {
+      text-align: center;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 6px;
+      color: black;
+    }
+
+    /* Rainbow borders */
+    .color-activity .border-indigo { border: 5px solid indigo; }
+    .color-activity .border-violet { border: 5px solid violet; }
+
+    /* You can add more classes as needed */
+  </style>
+</head>
+<body>
+
+  <section class="color-activity">
+    <h1>Color Activity</h1>
+
+    <h3>Declaring Colors (Named)</h3>
+    <p style="background-color: red;" class="border-indigo">This paragraph is colored red</p>
+    <p style="background-color: orange;" class="border-violet">This paragraph is colored orange</p>
+    <p style="background-color: yellow;" class="border-indigo">This paragraph is colored yellow</p>
+    <p style="background-color: green;" class="border-violet">This paragraph is colored green</p>
+    <p style="background-color: blue;" class="border-indigo">This paragraph is colored blue</p>
+    <p style="background-color: indigo;" class="border-violet">This paragraph is colored indigo</p>
+    <p style="background-color: violet;" class="border-indigo">This paragraph is colored violet</p>
+
+    <h3>Declaring Colors (RGB)</h3>
+    <p style="background-color: rgb(255, 0, 0);">This paragraph is colored red</p>
+    <p style="background-color: rgb(0, 255, 0);">This paragraph is colored green</p>
+    <p style="background-color: rgb(0, 0, 255);">This paragraph is colored blue</p>
+
+    <h3>Declaring Colors (RGBA)</h3>
+    <p style="background-color: rgba(0, 0, 255, 0);">This paragraph is rgba(0, 0, 255, 0)</p>
+    <p style="background-color: rgba(0, 0, 255, 0.1);">This paragraph is rgba(0, 0, 255, 0.1)</p>
+    <p style="background-color: rgba(0, 0, 255, 0.2);">This paragraph is rgba(0, 0, 255, 0.2)</p>
+    <p style="background-color: rgba(0, 0, 255, 0.3);">This paragraph is rgba(0, 0, 255, 0.3)</p>
+    <p style="background-color: rgba(0, 0, 255, 0.4);">This paragraph is rgba(0, 0, 255, 0.4)</p>
+    <p style="background-color: rgba(0, 0, 255, 0.5);">This paragraph is rgba(0, 0, 255, 0.5)</p>
+    <p style="background-color: rgba(0, 0, 255, 0.6);">This paragraph is rgba(0, 0, 255, 0.6)</p>
+    <p style="background-color: rgba(0, 0, 255, 0.7);">This paragraph is rgba(0, 0, 255, 0.7)</p>
+    <p style="background-color: rgba(0, 0, 255, 0.8);">This paragraph is rgba(0, 0, 255, 0.8)</p>
+
+    <h3>Declaring Colors (HEX)</h3>
+    <p style="background-color: #cdb4db;">This paragraph is #cdb4db</p>
+    <p style="background-color: #ffc8dd;">This paragraph is #ffc8dd</p>
+    <p style="background-color: #ffafcc;">This paragraph is #ffafcc</p>
+    <p style="background-color: #bde0fc;">This paragraph is #bde0fc</p>
+    <p style="background-color: #a2d2ff;">This paragraph is #a2d2ff</p>
+    <p style="background-color: #bcd0db;">This paragraph is #bcd0db</p>
+    <p style="background-color: #ccd;">This paragraph is #ccd</p>
+    <p style="background-color: #bbc;">This paragraph is #bbc</p>
+    <p style="background-color: #ac3bda;">This paragraph is #ac3bda</p>
+
+    <h3>Declaring Colors (HSL - Saturation)</h3>
+    <p style="background-color: hsl(0, 100%, 50%);">HSL: 0, 100%, 50%</p>
+    <p style="background-color: hsl(0, 80%, 50%);">HSL: 0, 80%, 50%</p>
+    <p style="background-color: hsl(0, 70%, 50%);">HSL: 0, 70%, 50%</p>
+    <p style="background-color: hsl(0, 60%, 50%);">HSL: 0, 60%, 50%</p>
+    <p style="background-color: hsl(0, 50%, 50%);">HSL: 0, 50%, 50%</p>
+    <p style="background-color: hsl(0, 40%, 50%);">HSL: 0, 40%, 50%</p>
+    <p style="background-color: hsl(0, 30%, 50%);">HSL: 0, 30%, 50%</p>
+    <p style="background-color: hsl(0, 20%, 50%);">HSL: 0, 20%, 50%</p>
+    <p style="background-color: hsl(0, 10%, 50%);">HSL: 0, 10%, 50%</p>
+
+    <h3>Declaring Colors (HSL - Lightness)</h3>
+    <p style="background-color: hsl(0, 100%, 10%);">HSL: 0, 100%, 10%</p>
+    <p style="background-color: hsl(0, 100%, 20%);">HSL: 0, 100%, 20%</p>
+    <p style="background-color: hsl(0, 100%, 30%);">HSL: 0, 100%, 30%</p>
+    <p style="background-color: hsl(0, 100%, 40%);">HSL: 0, 100%, 40%</p>
+    <p style="background-color: hsl(0, 100%, 50%);">HSL: 0, 100%, 50%</p>
+    <p style="background-color: hsl(0, 100%, 60%);">HSL: 0, 100%, 60%</p>
+    <p style="background-color: hsl(0, 100%, 70%);">HSL: 0, 100%, 70%</p>
+    <p style="background-color: hsl(0, 100%, 80%);">HSL: 0, 100%, 80%</p>
+    <p style="background-color: hsl(0, 100%, 90%);">HSL: 0
+    <h3>Declaring Colors (HSL - Hue)</h3>
+    <p style="background-color: hsl(100, 100%, 50%);">HSL: 100, 100%, 50%</p>
+    <p style="background-color: hsl(80, 80%, 50%);">HSL: 80, 80%, 50%</p>
+    <p style="background-color: hsl(70, 70%, 50%);">HSL: 70, 70%, 50%</p>
+    <p style="background-color: hsl(60, 60%, 50%);">HSL: 60, 60%, 50%</p>
+    <p style="background-color: hsl(50, 50%, 50%);">HSL: 50, 50%, 50%</p>
+    <p style="background-color: hsl(40, 40%, 50%);">HSL: 40, 40%, 50%</p>
+    <p style="background-color: hsl(30, 30%, 50%);">HSL: 30, 30%, 50%</p>
+    <p style="background-color: hsl(20, 20%, 50%);">HSL: 20, 20%, 50%</p>
+    <p style="background-color: hsl(10, 10%, 50%);">HSL: 10, 10%, 50%</p>
+  </section>
+
+</body>
+</html>
