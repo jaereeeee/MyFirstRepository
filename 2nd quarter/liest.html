@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Layout</title>
+      <style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff0f6;
+    border-radius: 12px;
+    margin-bottom: 30px;
+  }
+
+  .grid-container section {
+    background-color: #ffe6f0;
+    border: 2px solid #ffb6c1;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 2px 2px 8px rgba(255, 182, 193, 0.3);
+    transition: transform 0.2s ease;
+  }
+
+  .grid-container section:hover {
+    transform: scale(1.02);
+  }
+
+  .grid-container h1 {
+    font-size: 1.5em;
+    color: #d63384;
+    margin-bottom: 10px;
+  }
+
+  .grid-container ul,
+  .grid-container ol {
+    padding-left: 20px;
+    color: #333;
+  }
+
+  .grid-container li {
+    margin: 8px 0;
+    font-size: 1.1em;
+  }
+
+  .grid-container span {
+    font-size: 0.95em;
+    margin-left: 5px;
+    color: #ff69b4;
+  }
+
+  .grid-container + p {
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 10px;
+    color: #c2185b;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h2>My 1st Quarter Activities</h2>
+</header>
+<section>
+  <nav>
+     <ul>
+     <li><a href="2ndQrt.html">2nd Quarter Activities</a></li>
+     <li><a href="blk.html">Block</a></li>
+     <li><a href="linein.html">Inline</a></li>
+     <li><a class="active" href="#">List</a></li>
+     <li><a href="quiz in .net.html">My quiz 1 page 1</a></li>
+     <li><a href="color.html">My Color</a></li>
+     <li><a href="act.1.html">My 1st Activity</a></li>
+     <li><a href="my css's.html">My CSS's</a></li>
+     <li><a href="jeje/hanhan.html">My Headings</a></li>
+     <li><a href="jeje/hanhan.html">My Headings</a></li>
+     <li><a href="jeje/hanhan.html">My Headings</a></li>
+     <li><a href="jeje/hanhan.html">My Headings</a></li>
+     <li><a href="jeje/hanhan.html">My Headings</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <div class="grid-container">
+        <section>
+            <h1>List of K-pop Groups <span style="font-size:1.2em;">(｡•̀ᴗ-)✧🎀</span></h1>
+            <ul>
+                <li>SEVENTEEN <span>୧(๑•̀ᗜ•́๑)૭✧</span></li>
+                <li>BLACKPINK <span>♡(｡☌ᴗ☌｡)🎀</span></li>
+                <li>EXO <span>(ฅ'ω'ฅ)💗</span></li>
+                <li>TWICE <span>₍ᐢ.ˬ.ᐢ₎🎀</span></li>
+                <li>ENHYPEN <span>( ˘͈ ᵕ ˘͈♡)💗</span></li>
+            </ul>
+        </section>
+        <section>
+            <h1>List of K-pop Songs <span style="font-size:1.2em;">(ฅ'ω'ฅ)💗</span></h1>
+            <ol>
+                <li>Don't Wanna Cry - SEVENTEEN <span>🎀(｡•̀ᴗ-)✧</span></li>
+                <li>How You Like That - BLACKPINK <span>୧(๑•̀ᗜ•́๑)૭✧💗</span></li>
+                <li>Love Shot - EXO <span>₍ᐢ.ˬ.ᐢ₎♡</span></li>
+                <li>Fancy - TWICE <span>( ˘͈ ᵕ ˘͈♡)🎀</span></li>
+                <li>Drunk-Dazed - ENHYPEN <span>♡(｡☌ᴗ☌｡)💗</span></li>
+            </ol>
+        </section>
+        <section>
+            <h1>List of K-pop Idols <span style="font-size:1.2em;">₍ᐢ.ˬ.ᐢ₎🎀</span></h1>
+            <ul>
+                <li>Jeonghan - SEVENTEEN <span>(｡•̀ᴗ-)✧💗</span></li>
+                <li>Lisa - BLACKPINK <span>♡(｡☌ᴗ☌｡)🎀</span></li>
+                <li>Sehun - EXO <span>୧(๑•̀ᗜ•́๑)૭✧</span></li>
+                <li>Nayeon - TWICE <span>(ฅ'ω'ฅ)💗</span></li>
+                <li>Ni-ki - ENHYPEN <span>( ˘͈ ᵕ ˘͈♡)🎀</span></li>
+            </ul>
+        </section>
+    </div>
+    <p>All of these are K-pop <span style="font-size:1.5em;">🎀(｡•̀ᴗ-)✧₍ᐢ.ˬ.ᐢ₎💗</span></p>
+  </article>
+</section>
+
+
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
