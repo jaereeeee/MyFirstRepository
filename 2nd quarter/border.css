@@ -1,0 +1,34 @@
+ body {
+      background-color: #ffe6ec; /* pastel pink */
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .box {
+      width: 200px;
+      margin: 10px;
+      background-color: #fff0f5;
+      border-width: 4px;
+      border-color: #ffb6c1; /* light pastel pink */
+      text-align: center;
+    }
+
+    .dotted    { border-style: dotted; }
+    .dashed    { border-style: dashed; }
+    .solid     { border-style: solid; }
+    .double    { border-style: double; }
+    .groove    { border-style: groove; }
+    .ridge     { border-style: ridge; }
+    .inset     { border-style: inset; }
+    .outset    { border-style: outset; }
+    .none      { border-style: none; }
+    .hidden    { border-style: hidden; }
+    .mix       { border-style: dotted dashed solid double; } /* only works with 4 sides */
+
+    h1 {
+      width: 100%;
+      text-align: center;
+      color: #cc3366;
+    }
