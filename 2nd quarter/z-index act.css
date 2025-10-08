@@ -26,9 +26,11 @@ img{
     width: 200px;
     height: 200px;
     border: 2px solid palevioletred;
+    border-radius: 10px;
 }
 .content:hover {
     transform: scale(1.1);
+    transition: ease-in-out 0.3s;
     cursor: pointer;
     z-index: 40; /* Bring to front on hover */
 }
