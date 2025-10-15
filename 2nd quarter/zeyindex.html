@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body{
+    background-color:  #ffc8dd;
+}
+.container {   
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 10px;
+  height: max-content;
+  width: max-content;
+}
+.content{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 400px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    border-radius: 10px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid palevioletred;
+    border-radius: 10px;
+}
+.content:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+    z-index: 40; /* Bring to front on hover */
+}
+.content1 {
+  top: 300px;
+  left: 100px;
+  z-index: 1;
+}
+.content2 {
+  top: 350px;
+  left: 150px;
+  z-index: 20;
+}
+.content3 {
+  top: 400px;
+  left: 200px;
+  z-index: 3;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+  <h2>My 1st Quarter Activities</h2>
+</header>
+<section>
+  <nav>
+     <ul>
+     <li><a href="2ndQrt.html">2nd Quarter Activities</a></li>
+     <li><a href="blk.html">Block</a></li>
+     <li><a href="linein.html">Inline</a></li>
+     <li><a href="liest.html">List</a></li>
+     <li><a href="DIVs.html">DIV</a></li>
+     <li><a href="classid.html">Class And Id</a></li>
+     <li><a href="boader.html">Border</a></li>
+     <li><a href="marjane.html">Margin</a></li>
+     <li><a href="outlay.html">Layout</a></li>
+     <li><a href="1stQuiz.html">Quiz 1</a></li> 
+     <li><a class="active" href="#">Z-Index</a></li>
+    </ul>
+  </nav>
+<article>
+    <h2 style="text-align: center;">Z-Index Activity</h2>
+    <div class="container">
+        <div class="content content1"> <img src="https://i.pinimg.com/736x/91/b7/12/91b712bd23c41cdd20d90a71bb7d27df.jpg" alt="Content 1"></div>
+        <div class="content content2"><img src="https://i.pinimg.com/736x/8e/dc/60/8edc605a8e145a5d5ebdcb06537eba7d.jpg" alt="Content 2"></div>
+        <div class="content content3"><img src="https://i.pinimg.com/1200x/8b/3a/00/8b3a00b6287f9ff268845aff3c07d8a5.jpg" alt="Content 3"></div>
+</article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+</body>
+</html>
