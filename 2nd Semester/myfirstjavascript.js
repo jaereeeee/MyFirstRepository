@@ -4,3 +4,6 @@
     function Alert3(){
     alert("this is an alert 3 from JavaScript from the html")
     }
+    function console3(){
+    console.log("this is a console log 3 from JavaScript from the html")
+    }
