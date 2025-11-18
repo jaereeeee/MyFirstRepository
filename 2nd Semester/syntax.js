@@ -23,6 +23,6 @@ document.getElementById('october').innerHTML = october;
 function changeValues() {
     august = "80";
     october = "100";
-    document.getElementById('august').innerHTML = august;
+    document.getElementById('august').innerHTML = august;nbcvx 
     document.getElementById('october').innerHTML = october;
 }
