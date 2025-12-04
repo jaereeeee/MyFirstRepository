@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All-in-One Games</title>
+  <link rel="stylesheet" href="activity.css">
+</head>
+<body>
+  <h1>All-in-One Games</h1>
+  <p>Choose a game:</p>
+  <button onclick="showGame('math')">Math Challenge</button>
+  <button onclick="showGame('switch')">Fruit Guess</button>
+  <button onclick="showGame('forloop')">Guess the Number</button>
+
+  <!-- Math Challenge Game -->
+  <div id="math" class="game">
+    <p id="mathQuestion"></p>
+    <input type="number" id="mathAnswer" placeholder="Enter your answer">
+    <button onclick="checkMath()">Submit</button>
+    <p id="mathMessage"></p>
+  </div>
+
+  <!-- Switch Game -->
+  <div id="switch" class="game">
+    <p>Type a fruit: apple, banana, orange, grape</p>
+    <input type="text" id="fruitInput" placeholder="Enter fruit">
+    <button onclick="guessFruit()">Guess</button>
+    <p id="switchMessage"></p>
+  </div>
+
+  <!-- For Loop / Guess Number Game -->
+    <div id="forloop" class="game">
+  <section class="example">
+    <h2>Example 1 — For Loop Game</h2>
+    <p>Guess the secret number between 1 and 100! You have 10 tries. The script uses a <code>for loop</code> to count your attempts.</p>
+    <label for="numInput">Your guess:</label>
+    <input id="numInput" type="number" min="1" max="100" placeholder="Enter your guess here!" />
+    <button id="count">Guess</button>
+    <button id="clearCount">Reset</button>
+    <p class="result" id="countResult" aria-live="polite"></p>
+</section>
+    </div>
+
+
+  <script src="activity.js"></script>
+</body>
+</html>
