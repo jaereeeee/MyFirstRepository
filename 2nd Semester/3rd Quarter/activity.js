@@ -1,9 +1,10 @@
 // Show selected game
 function showGame(gameId) {
-  const games = document.querySelectorAll('.game');
-  games.forEach(game => game.style.display = 'none');
+  document.querySelectorAll('.game').forEach(game => {
+    game.style.display = 'none';
+  });
   document.getElementById(gameId).style.display = 'block';
-  
+
   if (gameId === 'math') initMath();
 }
 
@@ -14,95 +15,99 @@ function initMath() {
   num1 = Math.floor(Math.random() * 20) + 1;
   num2 = Math.floor(Math.random() * 20) + 1;
   correctAnswer = num1 + num2;
-  document.getElementById('mathQuestion').innerText = `What is ${num1} + ${num2}?`;
-  document.getElementById('mathMessage').innerText = '';
+
+  document.getElementById('mathQuestion').textContent =
+    `What is ${num1} + ${num2}?`;
   document.getElementById('mathAnswer').value = '';
+  document.getElementById('mathMessage').textContent = '';
 }
 
 function checkMath() {
-  const playerAnswer = parseInt(document.getElementById('mathAnswer').value);
-  if (playerAnswer === correctAnswer) {
-    document.getElementById('mathMessage').innerText = "Correct! 🎉";
-    document.getElementById('mathMessage').style.color = "green";
+  const answer = Number(document.getElementById('mathAnswer').value);
+  const msg = document.getElementById('mathMessage');
+
+  if (answer === correctAnswer) {
+    msg.textContent = "✅ Correct!";
+    msg.style.color = "green";
   } else {
-    document.getElementById('mathMessage').innerText = "Wrong! Try again.";
-    document.getElementById('mathMessage').style.color = "red";
+    msg.textContent = "❌ Wrong, try again.";
+    msg.style.color = "red";
   }
 }
 
-// ---------- Switch Game ----------
-function guessFruit() {
-  const fruit = document.getElementById('fruitInput').value.toLowerCase();
-  let message;
-  switch(fruit) {
+// ---------- Fruit Pick Game ----------
+function pickFruit() {
+  const fruit = document.getElementById('fruitSelect').value;
+  const msg = document.getElementById('switchMessage');
+
+  if (!fruit) {
+    msg.textContent = "❗ Please pick a fruit.";
+    msg.style.color = "red";
+    return;
+  }
+
+  switch (fruit) {
     case "apple":
-      message = "🍎 Apples are crunchy and sweet!";
+      msg.textContent = "🍎 Apple is crunchy and sweet!";
       break;
     case "banana":
-      message = "🍌 Bananas are soft and full of energy!";
+      msg.textContent = "🍌 Banana gives energy!";
       break;
     case "orange":
-      message = "🍊 Oranges are juicy and full of vitamin C!";
+      msg.textContent = "🍊 Orange is rich in Vitamin C!";
       break;
     case "grape":
-      message = "🍇 Grapes are small but tasty!";
+      msg.textContent = "🍇 Grapes are small and tasty!";
       break;
-    default:
-      message = "❌ That’s not on the list!";
+    case "strawberry":
+      msg.textContent = "🍓 Strawberry is juicy and sweet!";
+      break;
+    case "pineapple":
+      msg.textContent = "🍍 Pineapple is tropical and tangy!";
+      break;
+    case "cherry":
+      msg.textContent = "🍒 Cherry is small and nutritious!";
+      break;
   }
-  document.getElementById('switchMessage').innerText = message;
+
+  msg.style.color = "green";
 }
 
-// ---------- Guess Number Game ----------
-const num = document.getElementById('numInput');
-const numInputBtn = document.getElementById('count');
-const resultDiv = document.getElementById('countResult');
-const clearCountBtn = document.getElementById('clearCount');
-
+// ---------- Guess the Number ----------
 let secretNumber = Math.floor(Math.random() * 100) + 1;
-let maxAttempts = 10;
+let attempts = 0;
+const maxAttempts = 10;
 
-numInputBtn.addEventListener('click', () => {
-    const guess = Number(num.value);
-    if (isNaN(guess) || guess < 1 || guess > 100) {
-        resultDiv.textContent = 'Please enter a valid number (1–100).';
-        resultDiv.style.color = 'crimson';
-        return;
-    }
+document.getElementById('count').addEventListener('click', () => {
+  const guess = Number(document.getElementById('numInput').value);
+  const result = document.getElementById('countResult');
 
-    let output = '';
+  if (guess < 1 || guess > 100) {
+    result.textContent = "Enter a number from 1 to 100.";
+    result.style.color = "red";
+    return;
+  }
 
-    // For loop counts the attempts
-    for (let attempt = 1; attempt <= maxAttempts; attempt++) {
-        if (guess === secretNumber) {
-            output = `🎉 Correct! The secret number was ${secretNumber}. You guessed it in ${attempt} attempt(s).`;
-            resultDiv.style.color = 'green';
-            break;
-        } else if (guess < secretNumber) {
-            output = `Too low! Attempt #${attempt}`;
-            resultDiv.style.color = 'orange';
-            break;
-        } else {
-            output = `Too high! Attempt #${attempt}`;
-            resultDiv.style.color = 'orange';
-            break;
-        }
+  attempts++;
 
-        if (attempt === maxAttempts) {
-            output = `❌ Game over! The secret number was ${secretNumber}.`;
-            resultDiv.style.color = 'red';
-        }
-    }
-
-    resultDiv.textContent = output;
+  if (guess === secretNumber) {
+    result.textContent = `🎉 Correct! You guessed it in ${attempts} tries.`;
+    result.style.color = "green";
+  } else if (attempts >= maxAttempts) {
+    result.textContent = `❌ Game over! Number was ${secretNumber}.`;
+    result.style.color = "red";
+  } else if (guess < secretNumber) {
+    result.textContent = `Too low! Attempt ${attempts}/${maxAttempts}`;
+    result.style.color = "orange";
+  } else {
+    result.textContent = `Too high! Attempt ${attempts}/${maxAttempts}`;
+    result.style.color = "orange";
+  }
 });
 
-// Reset button
-clearCountBtn.addEventListener('click', () => {
-    secretNumber = Math.floor(Math.random() * 100) + 1;
-    num.value = '';
-    resultDiv.textContent = 'Game reset! Start guessing again.';
-    resultDiv.style.color = 'blue';
+document.getElementById('clearCount').addEventListener('click', () => {
+  secretNumber = Math.floor(Math.random() * 100) + 1;
+  attempts = 0;
+  document.getElementById('numInput').value = '';
+  document.getElementById('countResult').textContent = "Game reset!";
 });
-
- 

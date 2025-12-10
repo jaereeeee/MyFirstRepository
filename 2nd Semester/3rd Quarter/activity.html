@@ -7,13 +7,15 @@
   <link rel="stylesheet" href="activity.css">
 </head>
 <body>
+
   <h1>All-in-One Games</h1>
   <p>Choose a game:</p>
+
   <button onclick="showGame('math')">Math Challenge</button>
-  <button onclick="showGame('switch')">Fruit Guess</button>
+  <button onclick="showGame('switch')">Fruit Pick</button>
   <button onclick="showGame('forloop')">Guess the Number</button>
 
-  <!-- Math Challenge Game -->
+  <!-- Math Challenge -->
   <div id="math" class="game">
     <p id="mathQuestion"></p>
     <input type="number" id="mathAnswer" placeholder="Enter your answer">
@@ -21,27 +23,38 @@
     <p id="mathMessage"></p>
   </div>
 
-  <!-- Switch Game -->
+  <!-- Switch Game (FRUIT PICK VERSION) -->
   <div id="switch" class="game">
-    <p>Type a fruit: apple, banana, orange, grape</p>
-    <input type="text" id="fruitInput" placeholder="Enter fruit">
-    <button onclick="guessFruit()">Guess</button>
+    <p>Pick a fruit:</p>
+
+    <select id="fruitSelect">
+      <option value="">Choose a Fruit:</option>
+      <option value="apple">Apple</option>
+      <option value="banana">Banana</option>
+      <option value="orange">Orange</option>
+      <option value="grape">Grape</option>
+      <option value="strawberry">Strawberry</option>
+      <option value="pineapple">Pineapple</option>
+      <option value="cherry">Cherry</option>
+    </select>
+
+    <br><br>
+    <button onclick="pickFruit()">Pick</button>
     <p id="switchMessage"></p>
   </div>
 
-  <!-- For Loop / Guess Number Game -->
-    <div id="forloop" class="game">
-  <section class="example">
-    <h2>Example 1 — For Loop Game</h2>
-    <p>Guess the secret number between 1 and 100! You have 10 tries. The script uses a <code>for loop</code> to count your attempts.</p>
-    <label for="numInput">Your guess:</label>
-    <input id="numInput" type="number" min="1" max="100" placeholder="Enter your guess here!" />
+  <!-- Guess the Number -->
+  <div id="forloop" class="game">
+    <h2>Guess the Number</h2>
+    <p>Guess a number between 1 and 100 (10 tries)</p>
+
+    <input type="number" id="numInput" min="1" max="100">
+    <br><br>
     <button id="count">Guess</button>
     <button id="clearCount">Reset</button>
-    <p class="result" id="countResult" aria-live="polite"></p>
-</section>
-    </div>
 
+    <p id="countResult"></p>
+  </div>
 
   <script src="activity.js"></script>
 </body>

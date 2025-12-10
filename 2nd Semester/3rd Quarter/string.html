@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript's String</title>
+</head>
+<body>
+    <label for="num1">First Number</label>
+    <input id="num1" type="number" placeholder="enter number!">
+    <label for="num2">Second Number</label>
+    <input id="num2" type="number" placeholder="enter number!">
+    
+    <button id="addNumber">Add Number</button>
+    <p id="result"></p>
+
+    <h4 id="ict"></h4>
+    <p id="competence"></p>
+    <button id="add">See Enrollment</button>
+
+    <script>
+        const add1 = document.getElementById
+        ("num1");
+        const add2 = document.getElementById
+        ("num2");
+        const addNumber = document.getElementById
+        ("addNumber");
+        const result = document.getElementById
+        ("result");
+       addNumber.addEventListener("click",() =>{
+        const addends1 = add1.value;
+        const addends2 = add2.value;
+        console.log(add1);
+        result.innerHTML = `The answer is ${Number(addends1) + Number(addends2)}!`;
+       });
+
+       let header = "Competence"
+       let tags = ["Rosa, Nanlabi, Chua, Fernandez, Asis, Santos, Gayon"]
+
+       let html = `<h4>${header}</h4><ul>`;
+
+       for (const x of tags) {
+        html += `<li>${x}</li>`;
+       }
+       
+    </script>
+</body>
+</html>
