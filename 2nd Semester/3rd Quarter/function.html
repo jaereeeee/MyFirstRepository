@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function in JavaScript</title>
+</head>
+<body>
+    <p id="test"></p>
+    <p id="para"></p>
+    <hr>
+    <h4>Addition</h4>
+    <label for="num1">First Number</label>
+    <input id="num1" type="number" placeholder="enter number!">
+    <label for="num2">Second Number</label>
+    <input id="num2" type="number" placeholder="enter number!">
+    <button id="addNumber">Add Number</button>
+    <p id="add"></p>
+    <hr>
+    <h4>Subtraction</h4>
+    <label for="sub1">First Number</label>
+    <input id="sub1" type="number" placeholder="enter number!">
+    <label for="sub2">Second Number</label>
+    <input id="sub2" type="number" placeholder="enter number!">
+    <button id="subtractNumber">Subtract Number</button>
+    <p id="sub"></p>
+    <hr>
+    <h4>Multiplication</h4>
+    <label for="mul1">First Number</label>
+    <input id="mul1" type="number" placeholder="enter number!">
+    <label for="mul2">Second Number</label>
+    <input id="mul2" type="number" placeholder="enter number!">
+    <button id="multiplyNumber">Multiply Number</button>
+    <p id="mul"></p>
+    <hr>
+    <h4>Division</h4>
+    <label for="div1">First Number</label>
+    <input id="div1" type="number" placeholder="enter number!">
+    <label for="div2">Second Number</label>
+    <input id="div2" type="number" placeholder="enter number!">
+    <button id="divideNumber">Divide Number</button>
+    <p id="div"></p>
+    <script>
+const add1 = document.getElementById("num1");
+const add2 = document.getElementById("num2");
+const addNumber = document.getElementById("addNumber");
+const result = document.getElementById("add");
+
+addNumber.addEventListener("click", () => {
+  const addends1 = Number(add1.value);
+  const addends2 = Number(add2.value);
+  console.log(add1);
+  result.innerHTML = `The answer is: ${addends1 + addends2}!`;
+});
+
+
+const sub1 = document.getElementById("sub1");
+const sub2 = document.getElementById("sub2");
+const subtractNumber = document.getElementById("subtractNumber");
+const subResult = document.getElementById("sub");
+
+subtractNumber.addEventListener("click", () => {
+  const subtrahend1 = Number(sub1.value);
+  const subtrahend2 = Number(sub2.value);
+  console.log(sub1);
+  subResult.innerHTML = `The answer is: ${subtrahend1 - subtrahend2}!`;
+});
+
+const mul1 = document.getElementById("mul1");
+const mul2 = document.getElementById("mul2");
+const multiplyNumber = document.getElementById("multiplyNumber");
+const mulResult = document.getElementById("mul");
+
+multiplyNumber.addEventListener("click", () => {
+  const multiplicand1 = Number(mul1.value);
+  const multiplicand2 = Number(mul2.value);
+  console.log(mul1);
+  mulResult.innerHTML = `The answer is: ${multiplicand1 * multiplicand2}!`;
+});
+
+const div1 = document.getElementById("div1");
+const div2 = document.getElementById("div2");
+const divideNumber = document.getElementById("divideNumber");
+const divResult = document.getElementById("div");
+
+divideNumber.addEventListener("click", () => {
+  const dividend1 = Number(div1.value);
+  const dividend2 = Number(div2.value);
+  console.log(div1);
+  divResult.innerHTML = `The answer is: ${dividend1 / dividend2}!`;
+});
+
+
+        
+    
+    
+    </script>
+</body>
+</html>
